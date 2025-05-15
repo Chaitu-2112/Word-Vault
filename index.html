@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"/>
+    <link href="d.css" rel="stylesheet"/>
+    <title>WordVault - Dictionary</title>
+</head>
+<body>
+    <header class="head">        
+        <h1><span>W</span>ord <span>V</span>ault</h1>
+    </header>
+    <main class="container">
+        <h3>"Word Vault is a dynamic dictionary, offering a rich collection of words, meanings, and expressions to expand your vocabulary."</h3>
+        <div class="search-box">
+            <input type="text" id="search-box" placeholder="Search for a word..." aria-label="Search for a word">
+            <button onclick="searchWord()" aria-label="Search">🔍</button>
+            <button onclick="voiceSearch()" aria-label="Voice Search">🎙</button>
+        </div>
+        <div id="result" class="result-container"></div>
+        <button onclick="toggleDarkMode()" class="dark-mode-btn" aria-label="Toggle Dark Mode">🌙 Dark Mode</button>
+    </main>
+    <footer class="footer">
+        <p>© Developed by K Prudhvi S S S A Maharaju</p>
+    </footer>
+
+    <script src="dic.js"></script>
+</body>
+</html>

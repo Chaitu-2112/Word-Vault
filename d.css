@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.head {
+    background-color: darkslategray;
+    text-align: center;
+    padding: 25px;
+}
+
+.head h1 {
+    color: white;
+    font-family: cursive;
+    font-size: 40px;
+}
+
+.head span {
+    font-size: 60px;
+}
+
+.container {
+    text-align: center;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Make it responsive */
+    max-width: 650px; /* Limit max width */
+}
+
+h3 {
+    padding: 20px;
+    color: darkslategray;
+    font-size: 19px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px; /* Space below the search box */
+}
+
+input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: lightblue; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    background-color: lightblue;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.dark-mode-btn {
+    margin-top: 15px;
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.footer {
+    margin-top: 20px; /* Space above the footer */
+    background-color: lightblue;
+    text-align: center;
+    font-size: 14px; /* Font size for footer */
+    color: #777; /* Color for footer text */
+    padding: 15px;
+}
+
+.result-container {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.result-item {
+    background: #f9f9f9; /* Light background for each result */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding for spacing */
+    margin-bottom: 15px; /* Space between results */
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+
+.result-item:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.result-word {
+    font-size: 24px; /* Larger font for the word */
+    color: darkslategray; /* Color for the word */
+    margin-bottom: 5px; /* Space below the word */
+}
+
+.result-meaning {
+    font-size: 18px; /* Font size for the meaning */
+    color: #555; /* Darker gray for the meaning */
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .container {
+    background: #333;
+    color: white;
+}
+
+.dark-mode input {
+    background: #444;
+    color: white;
+    border: 2px solid #fff;
+}
+
+.dark-mode button {
+    background: #555;
+}
+
+.dark-mode button:hover {
+    background: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 95%; /* Adjust width for smaller screens */
+    }
+
+    .head h1 {
+        font-size: 30px; /* Adjust font size for smaller screens */
+    }
+
+    .head span {
+        font-size: 40px; /* Adjust font size
+    }
+            .head span {
+        font-size: 40px; /* Adjust font size for smaller screens */
+    }
+
+    h3 {
+        font-size: 16px; /* Adjust heading size for smaller screens */
+    }
+
+    .search-box input {
+        width: 100%; /* Full width for input on smaller screens */
+    }
+
+    .search-box button {
+        width: 100%; /* Full width for buttons on smaller screens */
+        margin-top: 10px; /* Space above buttons */
+    }
+
+    .result-word {
+        font-size: 20px; /* Adjust word size for smaller screens */
+    }
+
+    .result-meaning {
+        font-size: 16px; /* Adjust meaning size for smaller screens */
+    }
+
+    .footer {
+        font-size: 12px; /* Smaller font size for footer on mobile */
+    }
+}
